@@ -14,13 +14,13 @@ It creates 2 directories. One is called TrainTest which contains training and te
 
 Takes in 2 inputs: CV and a criteria. To run cross validation 
 ```
-python3 sca.py CV simple
+python3 sca.py CV foil
 ``` 
 Will print suggested threshold to stop making rules. Will also output directories containing results.txt files that have threshold and its respective calculated accuracy.
 
 Takes in 3 inputs: training data, threshold to stop making rules, and criteria. To run the final training data on the test data run: 
 ```
-python3 sca.py ./DataPrep/TrainTest/TrainingData.csv 0.6 simple
+python3 sca.py ./DataPrep/TrainTest/TrainingData.csv 8 foil
 ```
 Will also create directory containing rules in a txt file as well as prints the classification accuracy.
 
